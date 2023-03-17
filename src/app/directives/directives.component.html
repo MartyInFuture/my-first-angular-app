@@ -1,0 +1,18 @@
+<h1>Base directives</h1>
+<div [innerText]="'inner text directive'"></div>
+<div ngClass="hidden-directive-wrapper">
+  <button ngClass="hidden-button" (click)="toggle()">
+    {{ isHidden ? "Show hidden directive" : "Hide hidden directive" }}
+  </button>
+  <p [hidden]="isHidden">hidden directive</p>
+</div>
+
+<p [ngStyle]="{ color: 'red', 'font-size': '24px' }">ngStyle</p>
+
+<h2>Users List</h2>
+<ul *ngFor="let user of users">
+  <li>
+    <h3>{{ user.name }}</h3>
+    <p>{{ user.age }}</p>
+  </li>
+</ul>
