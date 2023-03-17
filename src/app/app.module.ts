@@ -7,6 +7,7 @@ import { CounterComponent } from './counter/counter.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DirectivesComponent } from './directives/directives.component';
     CounterComponent,
     HomeComponent,
     HeaderComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
